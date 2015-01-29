@@ -1,0 +1,44 @@
+<!-- <h3>We are just getting started but here is a list of items we sell.</h3>
+
+<h4>Here are the items in an unordered list</h4>
+<ul>
+  <% @items.each do |item| %>
+  <li>
+    <a href="items/<%= item.id %>">
+      <span><%= item.category %> - </span>
+      <span><%= item.name %> - </span>
+      <span>$<%= item.price %></span>
+    </a>
+  </li>
+  <% end %>
+</ul>
+
+<form role="search">
+  <input type="text" name="search" value="<%= @search %>" placeholder="search">
+  <button type="submit">submit</button>
+  <button type="reset"
+    onclick="window.location.href='/items'">reset</button>
+</form> -->
+
+
+
+<!-- <hr> -->
+
+<!-- <h4>Here are the items in an HTML table</h4>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Details</th>
+  </tr>
+  <% @items.each do |item| %>
+    <tr>
+      <td><%= item.category %></td>
+      <td><%= item.name %></td>
+      <td>$<%= item.price %></td>
+      <td><a href="items/<%= item.id %>">See Details</a></td>
+    </tr>
+    <% end %>
+</table> -->

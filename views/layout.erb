@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Pick Your Poison</title>
+    <link rel="stylesheet" type="text/css" href="/styles/css/bootstrap.css">
+  </head>
+
+  <body>
+    <section id='header'>
+      <h1>Pick Your Poison!</h1>
+      <p>We've created a library of delicious drinks that you can search by<br> your favorite alcohol: <span style="color:red">vodka, rum, hypnotiq or whiskey</span>.<br>Just enter it below:</p><br><br><br>
+      
+      
+       <!--  <form role="search">
+          <div class="form-group center-block">
+        <input type="text" name="search" value="<%= @search %>" placeholder="booze">
+        <button type="submit">submit</button>
+        <button type="reset"
+          onclick="window.location.href='/items'">reset</button>
+        </form> -->
+      
+
+        <form role="form">
+        <div class="form-group center-block">
+        <dix class="input-group">
+        <input type="text" class="form-control" value="<%= @search %>" placeholder="booze">
+        <span class="input-group-btn">
+        <button class="btn btn-default btn-sm" type="submit">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+        <button type="submit">submit</button>
+        <button type="reset"
+          onclick="window.location.href='/items'">reset</button>
+        </span>
+        </div>
+        </div>
+        </form>
+
+
+
+
+
+
+
+      <!-- <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/items">Shop</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </section> -->
+    <section>
+      <%= yield %>
+    </section>
+    <!-- <button type="button" class="btn btn-success">I Should Be Green</button> -->
+  </body>
+</html>
