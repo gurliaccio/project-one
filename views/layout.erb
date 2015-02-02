@@ -1,57 +1,52 @@
-<html>
+<html data-ember-extension="1">
   <head>
-    <title>Pick Your Poison</title>
+    <title>Drink Up</title>
+    <link rel="stylesheet"                 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet"                 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet"                 href="/styles/animate.min.css">
   </head>
 
   <body>
-    <section id='header'>
-      <h1>Pick Your Poison!</h1>
-      <p>We've created a library of delicious drinks that you can search by<br> your favorite alcohol: <span style="color:red">vodka, rum, hypnotiq or whiskey</span>.<br>Just enter it below:</p><br><br><br>
-      
-      
-       <!--  <form role="search">
-          <div class="form-group center-block">
-        <input type="text" name="search" value="<%= @search %>" placeholder="booze">
-        <button type="submit">submit</button>
-        <button type="reset"
-          onclick="window.location.href='/items'">reset</button>
-        </form> -->
-      
+    <div class="container-fluid">
 
-        <form role="form">
-        <div class="form-group center-block">
-        <dix class="input-group">
-        <input type="text" class="form-control" value="<%= @search %>" placeholder="booze">
-        <span class="input-group-btn">
-        <button class="btn btn-default btn-sm" type="submit">
-          <span class="glyphicon glyphicon-search"></span>
-        </button>
-        <button type="submit">submit</button>
-        <button type="reset"
-          onclick="window.location.href='/items'">reset</button>
-        </span>
-        </div>
-        </div>
-        </form>
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-xs-12 col-md-8"></div>
+        <div class="col-xs-6 col-md-4"></div>
+      </div>
 
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row">
+        <div class="col-xs-6 col-md-4"></div>
+        <div class="col-xs-6 col-md-4"></div>
+        <div class="col-xs-6 col-md-4"></div>
+      </div>
 
-
-
-
-
-
-      <!-- <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/items">Shop</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </nav>
-    </section> -->
-    <section>
-      <%= yield %>
-    </section>
-    <!-- <button type="button" class="btn btn-success">I Should Be Green</button> -->
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row">
+        <div class="col-xs-6"></div>
+        <div class="col-xs-6"></div>
+      </div>
+    </div>
+    
+    <div class="music">
+      <audio controls autoplay>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="./images/StarlandVocalBand_AfternoonDelight.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <ul class="nav nav-pills">
+      <li class="active"><a href="/">home</a></li>
+      <li class="active"><a href="/profile">profile</a></li>
+      <li class="active"><a href="mailto:gurliaccio@gmail.com">let us know what you think!</a></li>
+    </ul>
+      <section class="container">
+        <%= yield %>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </body>
 </html>
