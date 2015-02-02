@@ -10,32 +10,33 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-body {
-  background-image: url("/images/bar4.jpg");
-  background-repeat: no-repeat;
-  background-position: cover;
-  margin: 0;
-}
 
-#header h1{
-  font-size: 75px;
-  color: white;
+/*h1 {
+  font-size: 95px;
+  color: #CEB585;
   text-align: center;
-  margin-top: 150px;
-}
+  margin-bottom: 20px;
+}*/
 
-p {
-  font-size: 20px;
-  color: white;
-  text-align: center;
-}
-
-.form-group { 
-  margin-bottom: auto; 
+.form { 
+  display: block;
+  /*float: center;*/
+  /*margin-bottom: auto; 
   margin-top: auto;
   margin-left: center;
-  margin-right: center;
-  width: 50% }
+  margin-right: center;*/
+  width: 50% 
+}
+
+.box {
+  text-align: center;
+}
+
+/*#myCanvas {
+  display: block;
+}*/
+
+
 
 article,
 aside,
@@ -84,10 +85,10 @@ strong {
 dfn {
   font-style: italic;
 }
-h1 {
+/*h1 {
   margin: .67em 0;
   font-size: 2em;
-}
+}*/
 mark {
   color: #000;
   background: #ff0;
@@ -108,9 +109,9 @@ sup {
 sub {
   bottom: -.25em;
 }
-img {
+/*img {
   border: 0;
-}
+}*/
 svg:not(:root) {
   overflow: hidden;
 }
